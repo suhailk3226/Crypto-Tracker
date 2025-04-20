@@ -22,7 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-CoinContextProvider.jsx
-*.json
-tailwind.config.js
-vite.config.js
