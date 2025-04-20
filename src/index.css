@@ -1,0 +1,13 @@
+@import "tailwindcss";
+.app{
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.logo{
+  font-family: "Lobster";
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.box{
+  grid-template-columns: 0.5fr 2fr 1.5fr 1fr;
+ }
