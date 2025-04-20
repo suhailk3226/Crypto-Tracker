@@ -6,7 +6,7 @@ import LineChart from '../components/LineChart';
 const Coin = () => {
   const [coinData, setCoinData] = useState(false);
   const [historicalData, setHistoricalData] = useState([]);
-  let [days, setDays] = useState(30);
+  let [days, setDays] = useState(1);
 
   const { coinId } = useParams();
   const { currency } = useContext(CoinContext);
@@ -16,7 +16,7 @@ const Coin = () => {
     fetchFromApi(
       `coins/${coinId}/market_chart?vs_currency=${currency.name}&days=${days}&interval=daily`
     ).then((data) => setHistoricalData(data.prices));
-  }, [currency]);
+  }, [currency, days]);
 
   return coinData ? (
     <div className="md:flex w-full">
