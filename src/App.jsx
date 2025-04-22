@@ -10,7 +10,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/crypto-tracker" element={<Home />} />
-        <Route path="/coin/:coinId" element={<Coin />} />
+        <Route path="/crypto-tracker/coin/:coinId" element={<Coin />} />
       </Routes>
     </div>
   );
