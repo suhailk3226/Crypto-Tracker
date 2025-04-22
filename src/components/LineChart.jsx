@@ -8,10 +8,11 @@ import { daysData } from '../Context/Data';
 
 const LineChart = ({ historicalData, days, setDays }) => {
   const { currency } = useContext(CoinContext);
+
   return historicalData ? (
     <>
       <Line
-        className="md:mt-5 md:px-10"
+        className="mt-5 px-1.5 md:px-10"
         data={{
           labels: historicalData.map((historic) => {
             let date = new Date(historic[0]);

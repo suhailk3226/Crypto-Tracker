@@ -20,7 +20,7 @@ const Coin = () => {
 
   return coinData ? (
     <div className="md:flex w-full">
-      <div className="md:w-[35%] lg:w-[30%] text-white font-semibold md:border-r-2 h-[80vh] mt-10 px-3">
+      <div className="md:w-[35%] lg:w-[30%] text-white font-semibold border-none mt-10 px-3">
         <div className="w-full flex flex-col items-center mb-5">
           <img src={coinData.image.large} alt="" className="w-30 h-30" />
           <p className="text-2xl font-bold">{coinData.name.toUpperCase()}</p>
@@ -45,6 +45,7 @@ const Coin = () => {
           </p>
         </div>
       </div>
+      <div className="hidden md:block h-[80vh] w-1 bg-gray-500 mx-5"></div>
       <div className="w-full md:w-[65%] lg:w-[70%]">
         <LineChart
           historicalData={historicalData}
