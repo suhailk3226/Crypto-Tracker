@@ -26,7 +26,7 @@ const CryptoList = () => {
         {displayCoin.slice(0, 15).map((item, idx) => (
           <Link
             key={idx}
-            to={`/coin/${item.id}`}
+            to={`/crypto-tracker/coin/${item.id}`}
             className="box grid font-semibold text-white w-xl mx-auto text-sm pb-2 py-3"
           >
             <p className="">{item.market_cap_rank}</p>

@@ -12,9 +12,7 @@ const Coin = () => {
   const { currency } = useContext(CoinContext);
 
   useEffect(() => {
-    fetchFromApi(`/crypto-tracker/coins/${coinId}`).then((data) =>
-      setCoinData(data)
-    );
+    fetchFromApi(`coins/${coinId}`).then((data) => setCoinData(data));
     fetchFromApi(
       `coins/${coinId}/market_chart?vs_currency=${currency.name}&days=${days}&interval=daily`
     ).then((data) => setHistoricalData(data.prices));
